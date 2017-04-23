@@ -1,0 +1,513 @@
+!SESSION 2017-04-23 12:00:25.986 -----------------------------------------------
+eclipse.buildId=3.6.0.201407101106-RELEASE-e44
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 12:01:20.108
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 12:01:20.268
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.core.runtime 2 0 2017-04-23 12:02:28.621
+!MESSAGE Authorization infrastructure (org.eclipse.core.runtime.compatibility.auth) not installed.
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.core.internal.runtime.auth.AuthorizationDatabase cannot be found by org.eclipse.core.runtime_3.10.0.v20140318-2214
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:336)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:328)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.eclipse.core.internal.runtime.AuthorizationHandler.getAuthClass(AuthorizationHandler.java:48)
+	at org.eclipse.core.internal.runtime.AuthorizationHandler.loadKeyring(AuthorizationHandler.java:69)
+	at org.eclipse.core.internal.runtime.AuthorizationHandler.flushAuthorizationInfo(AuthorizationHandler.java:231)
+	at org.eclipse.core.runtime.Platform.flushAuthorizationInfo(Platform.java:590)
+	at com.atlassian.connector.eclipse.internal.commons.ui.MigrateToSecureStorageJob.migrateToSecureStorage(MigrateToSecureStorageJob.java:89)
+	at com.atlassian.connector.eclipse.internal.commons.ui.MigrateToSecureStorageJob.runInUIThread(MigrateToSecureStorageJob.java:60)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-04-23 12:02:28.831
+!MESSAGE No repository found at file:/C:/Users/PRANAVAN/Desktop/spring-tool-suite-3.6.0.RELEASE-e4.4-win32/sts-bundle/sts-3.6.0.RELEASE/configuration/org.eclipse.osgi/362/data/listener_1925729951/.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-23 12:02:35.462
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-23 12:02:35.462
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\PRANAVAN'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 12:04:09.176
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 12:04:09.610
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 12:04:09.779
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-23 12:08:49.138
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-23 12:08:49.246
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-23 12:22:20.784
+!MESSAGE The POM for org.springframework.boot:springframework-boot-starter-web:jar: is missing, no dependency information available
+
+!ENTRY org.springframework.ide.eclipse.boot 4 0 2017-04-23 12:43:53.372
+!MESSAGE Server returned HTTP response code: 500 for URL: http://aetherial.cfapps.io/boot/typegraph/1.4.2.RELEASE
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: http://aetherial.cfapps.io/boot/typegraph/1.4.2.RELEASE
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1840)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at org.apache.xerces.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:274)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery$1.call(SpringBootTypeDiscovery.java:362)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery$1.call(SpringBootTypeDiscovery.java:1)
+	at org.springframework.ide.eclipse.boot.util.RetryUtil.retry(RetryUtil.java:40)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery.createGraph(SpringBootTypeDiscovery.java:354)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery.getTypes(SpringBootTypeDiscovery.java:322)
+	at org.springsource.ide.eclipse.commons.completions.externaltype.indexing.SimpleExternalTypeIndexer.addFrom(SimpleExternalTypeIndexer.java:73)
+	at org.springsource.ide.eclipse.commons.completions.externaltype.ExternalTypeIndexManager$1.run(ExternalTypeIndexManager.java:97)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2017-04-23 16:41:27.385 -----------------------------------------------
+eclipse.buildId=3.6.0.201407101106-RELEASE-e44
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.equinox.ds 2 0 2017-04-23 16:46:19.140
+!MESSAGE [SCR - WorkThread] Timeout occurred! Thread was blocked on processing [QueuedJob] WorkPerformer: org.eclipse.equinox.internal.ds.SCRManager@175b7ca; actionType 1
+
+!ENTRY org.eclipse.equinox.ds 2 0 2017-04-23 16:46:19.155
+!MESSAGE [SCR] Enabling components of bundle org.eclipse.update.configurator did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 16:46:24.532
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 16:46:29.111
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-04-23 16:48:23.335
+!MESSAGE Connection to https://spring.io/blog.atom failed on Remote host closed connection during handshake. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:992)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:747)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:123)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:147)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:154)
+	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:278)
+	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:260)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:715)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:520)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	... 19 more
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 16:49:44.732
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 16:49:45.267
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 16:49:45.472
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-23 16:49:48.969
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-23 16:49:48.969
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\PRANAVAN'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.ide.eclipse.boot 4 0 2017-04-23 16:59:06.803
+!MESSAGE Server returned HTTP response code: 500 for URL: http://aetherial.cfapps.io/boot/typegraph/1.4.2.RELEASE
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: http://aetherial.cfapps.io/boot/typegraph/1.4.2.RELEASE
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1840)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at org.apache.xerces.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:274)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery$1.call(SpringBootTypeDiscovery.java:362)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery$1.call(SpringBootTypeDiscovery.java:1)
+	at org.springframework.ide.eclipse.boot.util.RetryUtil.retry(RetryUtil.java:40)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery.createGraph(SpringBootTypeDiscovery.java:354)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery.getTypes(SpringBootTypeDiscovery.java:322)
+	at org.springsource.ide.eclipse.commons.completions.externaltype.indexing.SimpleExternalTypeIndexer.addFrom(SimpleExternalTypeIndexer.java:73)
+	at org.springsource.ide.eclipse.commons.completions.externaltype.ExternalTypeIndexManager$1.run(ExternalTypeIndexManager.java:97)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15da979,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1bc8c82,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@22f67b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@166b009,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7db998,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12d2470,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1617d12,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@18f1c62,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1631e66,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@150b923,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25b7df,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b656f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@18d733a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ac18f4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@93bc89,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1596d71,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14567cb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.m2e.core.ui.command.addPlugin,Add Maven Plugin,
+		Add Maven Plugin,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@143d63a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.core.runtime.xml,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@48bbf3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@99015e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1845cb3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10d9030,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c70aa0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@16edaa5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@187f7cd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 18:32:29.609
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@a323f4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@9a12a1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY org.springframework.ide.eclipse.boot 4 0 2017-04-23 18:42:48.825
+!MESSAGE Bug: pops and pushes are out of whack!
+!STACK 0
+java.lang.IllegalArgumentException: Bug: pops and pushes are out of whack!
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery$MyHandler.dispose(SpringBootTypeDiscovery.java:276)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery$1.call(SpringBootTypeDiscovery.java:364)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery$1.call(SpringBootTypeDiscovery.java:1)
+	at org.springframework.ide.eclipse.boot.util.RetryUtil.retry(RetryUtil.java:40)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery.createGraph(SpringBootTypeDiscovery.java:354)
+	at org.springframework.ide.eclipse.boot.completions.SpringBootTypeDiscovery.getTypes(SpringBootTypeDiscovery.java:322)
+	at org.springsource.ide.eclipse.commons.completions.externaltype.indexing.SimpleExternalTypeIndexer.addFrom(SimpleExternalTypeIndexer.java:73)
+	at org.springsource.ide.eclipse.commons.completions.externaltype.ExternalTypeIndexManager$1.run(ExternalTypeIndexManager.java:97)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2017-04-23 21:11:37.604 -----------------------------------------------
+eclipse.buildId=3.6.0.201407101106-RELEASE-e44
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 21:12:04.919
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 21:12:05.526
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-23 21:12:35.303
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 21:14:20.347
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 21:14:21.191
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2017-04-23 21:14:21.403
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\PRANAVAN\Desktop\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.6.0.201407080543-RELEASE.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-23 21:14:22.367
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-23 21:14:22.368
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\PRANAVAN'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
